@@ -96,6 +96,7 @@ if ($_POST)
         </table>
     </div>
 
+    <h2>Order</h2>
     <div class="card">
         <div class="card-body">
             <form method="POST">
