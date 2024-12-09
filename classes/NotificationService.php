@@ -6,6 +6,6 @@ class NotificationService
 	{
 		$db = new Database('products.json');
 		$product = $db->find($productId);
-		$_SESSION['notifications'][] = "Only {$product['stock']} left of {$product['name']}";
+		$_SESSION['notifications'][$productId] = "Only {$product['stock']} left of {$product['name']}";
 	}
 }

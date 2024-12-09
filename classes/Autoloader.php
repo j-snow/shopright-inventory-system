@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 spl_autoload_register(function ($class) {
 	$src = $_SERVER['DOCUMENT_ROOT'] . '/classes/' . $class . '.php';
 	if (file_exists($src)) {
