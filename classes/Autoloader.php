@@ -15,4 +15,5 @@ function custom_error_handler($errno, $errstr, $errfile, $errline)
 
 	return false;
 }
+
 set_error_handler('custom_error_handler');
